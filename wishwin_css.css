@@ -1,0 +1,436 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #000a38;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: rgba(255,255,255,0.05);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #ffd700;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.welcome-bonus {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin-top: 2rem;
+}
+
+.welcome-bonus h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #ffd700;
+}
+
+.bonus-details p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.bonus-details h3 {
+    color: #ffd700;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.3rem;
+}
+
+.bonus-details ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.bonus-details li {
+    margin-bottom: 0.5rem;
+}
+
+.wagering-info {
+    background: rgba(255,255,255,0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.wagering-info h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.disclaimer {
+    background: rgba(255,215,0,0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #ffd700;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* All Promotions Section */
+.all-promotions {
+    margin: 3rem 0;
+    padding: 2rem 0;
+}
+
+.all-promotions h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.promo-item {
+    background: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.promo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    background: rgba(255,255,255,0.08);
+}
+
+.promo-item h3 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.promo-item p {
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+/* Bonus Crab Section */
+.bonus-crab-section {
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    padding: 3rem 0;
+    margin: 3rem 0;
+    border-radius: 15px;
+}
+
+.bonus-crab-content h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.crab-description {
+    background: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.crab-description p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.crab-description h3 {
+    color: #ffd700;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+}
+
+.crab-description ul {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.crab-description li {
+    margin-bottom: 0.5rem;
+    color: #cccccc;
+}
+
+/* Trust and License Section */
+.trust-license {
+    background: rgba(255,255,255,0.05);
+    padding: 3rem 0;
+    margin: 3rem 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.trust-license h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.trust-content {
+    text-align: center;
+}
+
+.trust-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+}
+
+.license-badge {
+    margin: 2rem 0;
+}
+
+.license-badge img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Footer Styles */
+.footer {
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer h3 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.footer h4 {
+    color: #ffd700;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.footer ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer li {
+    margin-bottom: 0.5rem;
+}
+
+.footer a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffd700;
+}
+
+.responsible-gaming p,
+.disclaimer p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .navigation ul {
+        gap: 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .welcome-bonus h2 {
+        font-size: 1.5rem;
+    }
+    
+    .promotions-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-bonus,
+    .crab-description {
+        padding: 1.5rem;
+    }
+    
+    .promo-item {
+        padding: 1.5rem;
+    }
+}
+
+.signup-button {
+            background: linear-gradient(135deg, #00c851 0%, #007e33 100%);
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(0, 200, 81, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .signup-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .signup-button:hover {
+            background: linear-gradient(135deg, #00e676 0%, #00a040 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0, 200, 81, 0.4);
+        }
+
+        .signup-button:hover::before {
+            left: 100%;
+        }
+
+        .signup-button:active {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(0, 200, 81, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .signup-button {
+                font-size: 1.3rem;
+                padding: 16px 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .signup-button {
+                font-size: 1.2rem;
+                padding: 14px 30px;
+            }
+        }
